@@ -5,7 +5,6 @@ module FullAdder4(S, A, B, Cin, Cout);
     output Cout;
     wire [2:0] C;
 
-    // Using named port mapping to be explicit
     FullAdder FA0(.X(A[0]), .Y(B[0]), .Cin(Cin),  .Z(S[0]), .Cout(C[0]));
     FullAdder FA1(.X(A[1]), .Y(B[1]), .Cin(C[0]), .Z(S[1]), .Cout(C[1]));
     FullAdder FA2(.X(A[2]), .Y(B[2]), .Cin(C[1]), .Z(S[2]), .Cout(C[2])); 
